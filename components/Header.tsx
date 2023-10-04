@@ -118,7 +118,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                 bg-transparent
                 text-neutral-300
                 font-medium
-
               "
               >
                 Sign up
