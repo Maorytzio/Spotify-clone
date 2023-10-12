@@ -12,6 +12,7 @@ import { useUser } from "@/hooks/useUser";
 
 import Button from "./Button";
 import { FaUserAlt } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -30,7 +31,9 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
     // TODO: reset any playing songs
     router.refresh();
     if (error) {
-      console.log(error);
+      toast.error(error.message);
+    }else {
+      toast.success("Logged out!");
     }
   };
   return (
