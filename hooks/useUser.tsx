@@ -9,7 +9,7 @@ import { UserDetails, Subscription } from "@/types";
 
 type UserContextType = {
   accessToken: string | null;
-  user: User | null;
+    user: User | null;
   userDetails: UserDetails | null;
   isLoading: boolean;
   subscription: Subscription | null;
