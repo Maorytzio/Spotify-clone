@@ -74,17 +74,17 @@ const LikedButton: React.FC<LikedButtonProps> = ({ songId }) => {
         toast.success("Liked!");
       }
     }
-    
+
     router.refresh();
   };
 
   return (
     <button
+      onClick={handleLike}
       className="
     hover:opacity-75
     transition
     "
-      onClick={handleLike}
     >
       <Icon color={isLiked ? "#22c55e" : "white"} size={25} />
     </button>
