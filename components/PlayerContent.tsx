@@ -81,13 +81,13 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
     }
   };
 
-  const toggleMute=() => {
+  const toggleMute = () => {
     if (volume === 0) {
       setVolume(1);
-    }else{
+    } else {
       setVolume(0);
     }
-  }
+  };
 
   return (
     <div className=" grid grid-cols-2 md:grid-cols-3 h-full">
@@ -189,11 +189,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
             className="current-pointer"
             size={34}
           />
-          <Slider
-          value={volume}
-          onChange={(value)=>setVolume(value)}
-
-           />
+          <Slider value={volume} onChange={(value) => setVolume(value)} />
         </div>
       </div>
     </div>
