@@ -37,6 +37,9 @@ export interface Price {
   products?: Product;
 }
 
+export interface ProductWithPrice extends Product {
+  prices?: Price[];
+}
 
 export interface Subscription {
   id: string;
@@ -57,11 +60,12 @@ export interface Subscription {
   prices?: Price;
 }
 
-export interface Song{
-  id:string;
-  user_id:string;
-  author:string;
-  title:string;
-  song_path:string;
-  image_path:string;
+export interface Song {
+  id: string;
+  user_id: string;
+  author: string;
+  title: string;
+  song_path: string;
+  image_path: string;
 }
+
